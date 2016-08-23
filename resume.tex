@@ -1,0 +1,131 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+
+\name{Naeem Quddus} % Your name
+%\address{123 Broadway \\ City, State 12345} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(713)~$\cdot$~775~$\cdot$~1383 \\ nquddus94@gmail.com} % Your phone number and email
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+  \begin{rSubsection}{Oculus - Facebook}{May 2016 - August 2016}{Software Engineering Intern}{Menlo Park, CA}
+  \item Position: Software Engineering Intern on the Developer Platform team.
+  \item Redesigned and implemented a new navigation system for the Oculus developer dashboard website. Worked with designers and content strategists to create a new user experience for first time users of the website tools with reusable components. Created a rich text editor to allow developers to write formatted descriptions for their applications. 
+  \end{rSubsection}
+
+%------------------------------------------------
+
+
+  \begin{rSubsection}{Bloomberg LP}{May 2015 - August 2015}{Software Engineering Intern}{New York City, NY}
+  \item Position: Core Financial Intern on the Mortgage Development team.
+  \item Designed and created new system to handle workflows for individuals. System designed to automatically generate, assign, and monitor progress of work items in real time. Helps streamline triage and work blockage analysis for project leads. Abstracted interface to allow for new projects and workflows to be added smoothly. 
+%  \item Development tools: Python for programming majority of system scripts. C++ to interact with Bloomberg data systems. Tickets managed by JIRA, and project tracking software. 
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Indeed.com}{May 2014 - August 2014}{Software Engineering Intern}{Austin, TX}
+\item Position: Intern on the Aggregation team.
+\item Programmed a service to query information from Twitter to find possible job application pages. Wrote and trained a naive bayesian classifier to parse the html content of candidate pages and classify pages, filtering out 98\% of undesired pages. 
+%\item Development tools: Java for primary development of both systems. Guice and Ivy for dependency injection and management. RabbitMQ used for intersystem communications. 
+\end{rSubsection}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+  \begin{rSubsection}{Web Crawler}{}{}{}
+  \item Given starting point, crawled and generated index for a group of html pages. 
+  \item Allowed users to enter Boolean search queries and displayed relevant results from an index.  
+  \end{rSubsection}
+
+  \begin{rSubsection}{Resume Generator}{}{}{}
+  \item Django based WebApp that generates random resume format for users based off of inputs of relevant information and existing resume formatting data from Indeed's database. 
+  \end{rSubsection}
+
+  \begin{rSubsection}{2D Rubix Cube}{}{}{}
+  \item Application that allows users to freely manipulate a rubix cube (displayed in 2 dimensions).
+  \item Developed algorithm to generate cube solving instructions (Non brute force approach) and display in Singmaster notation. 
+  \end{rSubsection}
+
+\end{rSection}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education and Accomplishments}
+
+  {\bf University of Texas, Austin} \hfill {\em May 2017} \\ 
+  B.S. in Computer Science $\cdot$ Turing Scholars Honors Program  \\
+  Overall GPA: 3.85
+
+\begin{rSubsection}{Competitive Programming}{}{}{}
+\item Member of UT's International Collegiate Programming Contest team at South Central Regional \hfill {\em October 2014}
+\item {\bf 1st Place} Google Games Austin \hfill {\em April 2015}
+\item {\bf 2nd Place} Microsoft Coding Challenge \hfill {\em September 2015}
+\end{rSubsection}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+  Proficient & Java, Python \\
+  Familiar & C/C++, React.js, Bash \\ 
+  Tools & Git, Travis CI, Vim, Guice, GraphQL/Relay
+\end{tabular}
+
+\end{rSection}
+
+%
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
