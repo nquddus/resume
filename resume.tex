@@ -67,18 +67,15 @@
 
 \begin{rSection}{Projects}
 
-  \begin{rSubsection}{Web Crawler}{}{}{}
-  \item Given starting point, crawled and generated index for a group of html pages. 
-  \item Allowed users to enter Boolean search queries and displayed relevant results from an index.  
+  \begin{rSubsection}{Radiosity Global Illuminator}{}{}{}
+  \item Implementation of a rendering algorithm generating scenes with global illumination. Divides a given environment into discrete polygons which radiate light until color convergence. 
+  \item Ray based communication based off of a previously written c++ Ray Tracer.
   \end{rSubsection}
 
-  \begin{rSubsection}{Resume Generator}{}{}{}
-  \item Django based WebApp that generates random resume format for users based off of inputs of relevant information and existing resume formatting data from Indeed's database. 
-  \end{rSubsection}
-
-  \begin{rSubsection}{2D Rubix Cube}{}{}{}
-  \item Application that allows users to freely manipulate a rubix cube (displayed in 2 dimensions).
-  \item Developed algorithm to generate cube solving instructions (Non brute force approach) and display in Singmaster notation. 
+  \begin{rSubsection}{Cloth Simulator}{}{}{}
+  \item Implementation of \textit{Large Steps in Cloth Simulation} by Baraff and Witkin and \textit{Robust Treatment of Collisions, Contact and Friction for Cloth Animation} by Bridson et al. 
+  \item Cloth internal dynamics implemented through implicit time itegrator on differentiated energy conditions. 
+  \item Collisions prevented by inelastic impulses and spring based repulsion forces and detected by axis aligned bounding volume hierarchy.
   \end{rSubsection}
 
 \end{rSection}
