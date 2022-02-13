@@ -57,7 +57,7 @@
 % \printaddress is used to style an address line (given as input)
 \def \printaddress #1{
   \begingroup
-    \def \\ {\addressSep\ }
+    \def \\ {\ \addressSep\ \ }
     \centerline{#1}
   \endgroup
   \par
