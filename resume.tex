@@ -1,34 +1,14 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=1in,top=0.75in,right=1in,bottom=0.75in]{geometry} % Document margins
 
-\name{Naeem Quddus} % Your name
-%\address{123 Broadway \\ City, State 12345} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\name{Naeem Quddus} % Your name\
 %\address{713~$\cdot$~775~$\cdot$~1383  \\  nquddus94@gmail.com} % Your phone number and email
-\address{713\ 775\ 1383  \\  nquddus94@gmail.com} % Your phone number and email
+\address{(713)\ 775\ - 1383  \\  nquddus94@gmail.com} % Your phone number and email
 
 \begin{document}
 
@@ -40,94 +20,93 @@
 \begin{rSection}{Experience}
 
 
-% Numbers to add:
-    % Companion app downloaded 1.2 million times in the first year
-    % Nearly a quarter million go's sold in the first quarter
-    % GDPR fines can be up to 4% of a firm's annual worldwide revenue from previous fin year
+% Numbers to consider adding to make section more compelling:
+%   - 7 regions? 
+%   - 120 TPS?
+%   - Memorization suppression at multi terabyte scale
+% Facts to talk about
+%   - Founding member of the Bedrock Responsible AI team (and longest tenured lol)
+%   - Key developer of the content moderation service, responsible for the API, design and implementation of several filters, dynamic configuration of service, etc
+%   - Designed deployment stack for the inference code and ML model hosting
+%   - Lead learning sessions for the team, scheduling and guiding team efforts to educate newer members about specific projects and technologies used
+%   - Memorization Suppression
+%     - Infrastructure and deployment
+%     - Integration and business logic
+%     - Indexing library design for multi petabyte scale data
+%     - Operational backup and restoration
+%   - During bedrock product launch, lead for the operation readiness of the content moderation service including test coverage, canaries, and dashboards and alarms
+%   - During bedrock product launch, lead for the app sec review tightening the security screws.
+%   - Lead and primary developer for expanding the service to Govcloud protected partition
+  % - Trust and Safety privacy filter
 
-% Words to include
-    % Engineered - open ended enough to be for team or single person
+    \begin{rSubsection}{Amazon}{August 2022 - February 2024}{Software Development Engineer - Amazon Bedrock Responsible AI}{Seattle, WA}
+      \item Founding member of the ResponsibleAI team under the Amazon Bedrock Foundational LLM org that ensured the safe and responsible use of AI within Amazon. 
+    Designed the content moderation service API and infrastructure from the initial requirements and remained key developer past product launch.
+      \item Developed the moderation service and supported its expansion across 7 global regions, serving up to 120 transactions per second. The service detects
+    toxicity, profanity, personally identifiable information, bias, malicious intent, privacy violations, or copyrighted material in user inputs and Bedrock LLM continuations.
+      \item Implemented a pipeline to build and deploy ML model binaries and accompanying inference to Sagemaker endpoints to minimize deployment time of new versions of each model.
+      \item Key developer in the Memorization Suppression project to detect and suppress copyrighted and sensitive material from LLM generations. 
+    Designed library to parse and index data into Amazon Opensearch Service clusters at petabyte scale including operational backup and restoration.
+      \item Created the dynamic configuration system of the service allowing for filter and model configuration changes across all regions and production stages in sub second time frames.
+      \item As the team expanded from two to ten members, lead learning sesions for the ResponsibleAI team, scheduling and guiding efforts to educate newer members about specific projects and the technologies used.
+      \item During Amazon Bedrock product launch, served as the lead for the operational readiness and application security reviews for the Content Moderation Service. 
+    Ensured service was ready for production by ensuring test coverage, integration testing, canaries, dashboards, alarms and security met Amazon Tier 1 product standards.
+      \item Directed the expansion of the content moderation service to Govcloud protected partition, serving as the lead and primary developer, extending the bedrock LLM to customers adhering to ITAR, FedRAMP and other regulations.
+    \end{rSubsection}
+    
+    %------------------------------------------------ 
 
   \begin{rSubsection}{Oculus VR - Meta}{June 2017 - May 2018}{Software Engineer - Oculus Mobile App Team}{Menlo Park, CA}
-  \item Built and released the companion app for Oculus Go and Oculus
-      Quest on iOS and Android.
-      Worked full stack on mobile pairing user flow and Bluetooth pairing protocols.
-      Designed and implemented new standards for the standalone VR first time user experience. 
-      Developed and engineered Oculus mobile GDPR compliance process and strategy.
-  \item Outcomes: 1.2 million app downloads in the first year, quarter million Oculus Go headsets sold in the first quarter, 
-      Secured against potential GDPR compliance fines of 1.6 billion dollars 
+    \item Built and launched Oculus Go and Oculus Quest companion app on iOS and Android platforms, 
+      driving 1.2 million app downloads within the first year and bolstering sales of over a quarter million headsets in the first quarter.
+    \item Worked full stack on both React native front end app and Bluetooth protocols for enhanced connectivity.
+    \item Crafted and iterated on the first-time user experience, amplifying user engagement and retention.
+    \item Designed and developed Oculus mobile GDPR compliance process, safeguarding against billion-dollar fines and ensuring regulatory adherence.
   \end{rSubsection}
 
 %------------------------------------------------
 
-  \begin{rSubsection}{Oculus VR - Meta}{May 2016 - August 2016}{Software Engineering Intern - Developer Platform team}{Menlo Park, CA}
-  \item Redesigned and implemented a new navigation system for the Oculus
-      developer dashboard website. Worked with designers and content strategists
-      to create a new user experience. Created a rich text editor to allow
-      developers to write formatted descriptions. 
-  \end{rSubsection}
+  % \begin{rSubsection}{Oculus VR - Meta}{May 2016 - August 2016}{Software Engineering Intern - Developer Platform team}{Menlo Park, CA}
+  %   \item Redesigned and implemented a new navigation system for the Oculus
+  %       developer dashboard website. Worked with designers and content strategists
+  %       to create a new user experience. Created a rich text editor to allow
+  %       developers to write formatted descriptions. 
+  % \end{rSubsection}
 
-%------------------------------------------------
+  %------------------------------------------------
 
 
-  \begin{rSubsection}{Bloomberg LP}{May 2015 - August 2015}{Software Engineering Intern - Mortgage Development team}{New York City, NY}
-  \item Designed and created new system to handle workflows for individuals.
-      System designed to automatically generate, assign, and monitor progress of
-      work items in real time. Helps streamline triage and work blockage
-      analysis for project leads. Abstracted interface to allow for new projects
-      and workflows to be added smoothly. 
-%  \item Development tools: Python for programming majority of system scripts. C++ to interact with Bloomberg data systems. Tickets managed by JIRA, and project tracking software. 
-\end{rSubsection}
+  % \begin{rSubsection}{Bloomberg LP}{May 2015 - August 2015}{Software Engineering Intern - Mortgage Development team}{New York City, NY}
+  %   \item Designed and created new system to handle workflows for individuals.
+  %       System designed to automatically generate, assign, and monitor progress of
+  %       work items in real time. Helps streamline triage and work blockage
+  %       analysis for project leads. Abstracted interface to allow for new projects
+  %       and workflows to be added smoothly. 
+  % %  \item Development tools: Python for programming majority of system scripts. C++ to interact with Bloomberg data systems. Tickets managed by JIRA, and project tracking software. 
+  % \end{rSubsection}
 
-%------------------------------------------------
+  %------------------------------------------------
 
-\begin{rSubsection}{Indeed.com}{May 2014 - August 2014}{Software Engineering Intern - Aggregation team}{Austin, TX}
-\item Programmed a service to query information from Twitter to find possible
-    job application pages. Wrote and trained a naive Bayesian classifier to
-    parse the html content of candidate pages and classify pages, filtering out
-    98\% of undesired pages. 
-%\item Development tools: Java for primary development of both systems. Guice and Ivy for dependency injection and management. RabbitMQ used for intersystem communications. 
-\end{rSubsection}
+  % \begin{rSubsection}{Indeed.com}{May 2014 - August 2014}{Software Engineering Intern - Aggregation team}{Austin, TX}
+  % \item Programmed a service to query information from Twitter to find possible
+  %     job application pages. Wrote and trained a naive Bayesian classifier to
+  %     parse the html content of candidate pages and classify pages, filtering out
+  %     98\% of undesired pages. 
+  % %\item Development tools: Java for primary development of both systems. Guice and Ivy for dependency injection and management. RabbitMQ used for intersystem communications. 
+  % \end{rSubsection}
 
 \end{rSection}
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Projects}
-
-  \begin{rSubsection}{Radiosity Global Illuminator}{}{}{}
-  \item Implementation of a rendering algorithm generating scenes with global
-      illumination. Divides a given environment into discrete polygons which
-      radiate light until color convergence. 
-  \end{rSubsection}
-
-  \begin{rSubsection}{Cloth Simulator}{}{}{}
-  \item Implementation of \textit{Large Steps in Cloth Simulation} by Baraff and
-      Witkin and \textit{Robust Treatment of Collisions, Contact and Friction
-      for Cloth Animation} by Bridson et al. 
-  \item Collisions prevented by inelastic impulses and spring based repulsion
-      forces and detected by axis aligned bounding volume hierarchy.
-  \end{rSubsection}
-
-\end{rSection}
-%------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Education and Accomplishments}
+% \begin{rSection}{Education and Accomplishments}
+\begin{rSection}{Education}
 
   {\bf University of Texas, Austin} \hfill {\em May 2017} \\ 
   B.S. in Computer Science $\cdot$ Turing Scholars Honors Program  \\
   Overall GPA: 3.85
-
-    \begin{rSubsection}{Competitive Programming}{}{}{}
-        \item Member of UT's International Collegiate Programming Contest team at South Central Regional \hfill {\em October 2014}
-        \item {\bf 1st Place} Google Games Austin \hfill {\em April 2015}
-        \item {\bf 2nd Place} Microsoft Coding Challenge \hfill {\em September 2015}
-    \end{rSubsection}
 
 \end{rSection}
 
@@ -137,11 +116,12 @@
 
 \begin{rSection}{Technical Strengths}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-  Proficient & Java, Javascript, React Native \\
-  Familiar & Python, C/C++, Bash \\ 
-  Tools & Git, Travis CI, Vim, Guice, GraphQL/Relay, Redux
-\end{tabular}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Proficient & Java, Javascript, React Native \\
+    Familiar & Python, C/C++, Bash \\ 
+    Tools & Git, Vim, Guice, Dagger, GraphQL/Relay, Redux \\
+    AWS & Lambda, Sagemaker, S3, IAM, OpenSearch, CDK, Pipelines, Cloudwatch \\
+  \end{tabular}
 
 \end{rSection}
 
